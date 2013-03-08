@@ -1,0 +1,12 @@
+name:                   euler
+version:                0.1
+build-type:             Simple
+cabal-version:          >= 1.2
+extra-source-files:     Euler/Common.hs
+
+Library
+   exposed-modules:      Euler.S000
+   build-depends:        base >= 4.0.0 && < 5, QuickCheck >= 2 && < 3 
+   Ghc-options:         -Wall -O2
+   Ghc-prof-options:    -prof -auto-all
+   hs-source-dirs:       src
